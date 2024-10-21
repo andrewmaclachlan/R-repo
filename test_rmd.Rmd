@@ -1,6 +1,8 @@
 ---
 title: "Untitled"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 date: "2024-10-21"
 ---
 ```{r}
@@ -43,9 +45,9 @@ country <- function(gii_world, iso3, destination = 'iso2c', nomatch = NA, warn =
  }
 gii_world <- country(gii_world, iso3 = "iso3") 
 gii_world <- gii_world %>%
-  rename(iso2='iso3')%>%
-  filter(!is.na(iso2))%>%
-gii_world <- gii_world%>%
+  rename(iso2='iso3') %>%
+  filter(!is.na(iso2))
+gii_world <- gii_world %>%
   select(-country)
 head(gii_world)
 ```
