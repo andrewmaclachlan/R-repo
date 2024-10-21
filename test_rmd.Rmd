@@ -1,0 +1,15 @@
+---
+title: "Untitled"
+output: html_document
+date: "2024-10-21"
+---
+```{r}
+library(terra)
+library(here)
+jan<-terra::rast(here("/Users/xilver/Desktop/CASA0005/week3/prac3/wc2.1_5m_wind_01.tif"))
+plot(jan)
+```
+```{r}
+
+```
+
